@@ -55,14 +55,19 @@
         <p>If you owe $500 on a credit card with 18% APR, paying only $25/month will take longer and cost more than paying $50/month.</p>
     </section>
 
-    <section class="lesson-section">
-        <h2>Quick Quiz</h2>
-        <ol>
-            <li>What is interest?</li>
-            <li>Name two types of debt.</li>
-            <li>What strategies help reduce debt faster?</li>
-        </ol>
-    </section>
+<section class="lesson-quiz">
+    <h2>Test Your Knowledge</h2>
+    <div id="quiz-container">
+        <div id="question"></div>
+        <ul id="choices"></ul>
+        <button id="next-btn">Next</button>
+        <div id="score-container" style="display:none;">
+            <h3>Your Score: <span id="score"></span>/<span id="total"></span></h3>
+        </div>
+    </div>
+</section>
+
+<script src="quiz.js"></script>
 </div>
 
 <footer>
