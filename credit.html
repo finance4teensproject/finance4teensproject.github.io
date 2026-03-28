@@ -56,14 +56,19 @@
         <p>Example: If you charge $100 on a credit card and pay $50 this month, you maintain credit usage at 50%, which helps your score.</p>
     </section>
 
-    <section class="lesson-section">
-        <h2>Quick Quiz</h2>
-        <ol>
-            <li>What factors affect your credit score?</li>
-            <li>Why should you only borrow what you can repay?</li>
-            <li>How can you keep credit card balances healthy?</li>
-        </ol>
-    </section>
+<section class="lesson-quiz">
+    <h2>Test Your Knowledge</h2>
+    <div id="quiz-container">
+        <div id="question"></div>
+        <ul id="choices"></ul>
+        <button id="next-btn">Next</button>
+        <div id="score-container" style="display:none;">
+            <h3>Your Score: <span id="score"></span>/<span id="total"></span></h3>
+        </div>
+    </div>
+</section>
+
+<script src="quiz.js"></script>
 </div>
 
 <footer>
