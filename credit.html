@@ -1,77 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Credit</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="quiz.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit | Finance 4 Teens</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
 </head>
 <body>
-
-<header>
-    <h2>Finance4Teens</h2>
+  <header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="the-issue.html">The Issue</a>
-        <a href="budgeting.html">Budgeting & Saving</a>
-        <a href="credit.html">Credit</a>
-        <a href="interest-debt.html">Interest & Debt</a>
-        <a href="college-costs.html">College Costs</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="about.html">About</a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="the-issue.html">The Issue</a></li>
+        <li><a href="budgeting.html">Budgeting & Saving</a></li>
+        <li><a href="credit.html">Credit</a></li>
+        <li><a href="interest-debt.html">Interest & Debt</a></li>
+        <li><a href="college-costs.html">College Costs & Loans</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="about.html">About The Project</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
-    <h1>Credit</h1>
-    <p>Learn how credit works, why it matters, and how to build it responsibly.</p>
-</section>
+  <main class="lesson-page">
+    <section class="intro">
+      <h1>Credit</h1>
+      <p>Understanding credit is essential for building a strong financial foundation. Credit affects your ability to buy a car, get a loan, or even rent an apartment.</p>
+    </section>
 
-<div class="container">
-    <h2>Quick Guide</h2>
-    <p>Credit shows lenders how reliable you are with borrowing money. Good credit opens doors; bad credit can cost you thousands.</p>
+    <section class="lessons">
+      <h2>Core Lessons</h2>
+      <h3>What is Credit?</h3>
+      <p>Credit is borrowing money now and paying it back later. Credit cards, loans, and lines of credit are common examples.</p>
 
-    <h2>Resources</h2>
-    <div class="card-grid">
-        <div class="card">
-            <h3>Credit Cards</h3>
-            <p>Use responsibly to build credit without debt.</p>
-        </div>
-        <div class="card">
-            <h3>Credit Scores</h3>
-            <p>Learn what affects your score and why it matters.</p>
-        </div>
-        <div class="card">
-            <h3>Common Mistakes</h3>
-            <p>Paying late, maxing out cards, and applying too often can hurt you.</p>
-        </div>
-    </div>
+      <h3>Credit Score Basics</h3>
+      <p>Your credit score is a number that represents how responsible you are with money. Paying bills on time, keeping balances low, and managing accounts wisely improves your score.</p>
 
-    <h2>Quiz</h2>
-    <div id="credit-quiz">
-        <div class="question">
-            <p>1. What is a credit score used for?</p>
-            <label><input type="radio" name="q1" value="correct"> To show lenders your reliability</label><br>
-            <label><input type="radio" name="q1" value="wrong"> To track your school grades</label>
-        </div>
-        <div class="question">
-            <p>2. True or False: Paying your credit card late can lower your credit score.</p>
-            <label><input type="radio" name="q2" value="correct"> True</label><br>
-            <label><input type="radio" name="q2" value="wrong"> False</label>
-        </div>
-        <div class="question">
-            <p>3. Scenario: You maxed out your card. What should you do?</p>
-            <label><input type="radio" name="q3" value="correct"> Pay it down ASAP and avoid new charges</label><br>
-            <label><input type="radio" name="q3" value="wrong"> Ignore it and hope it goes away</label>
-        </div>
-        <button class="btn" onclick="checkQuiz('credit-quiz')">Check Answers</button>
-        <p id="credit-quiz-result"></p>
-    </div>
+      <h3>Using Credit Wisely</h3>
+      <p>Always pay at least the minimum balance on time, avoid maxing out cards, and only borrow what you can repay.</p>
+    </section>
 
-</div>
+    <section class="examples">
+      <h2>Examples & Scenarios</h2>
+      <ul>
+        <li>Alex opens a credit card and pays off the full balance each month to build credit without paying interest.</li>
+        <li>Maria misses a payment and her score drops, making future loans more expensive.</li>
+      </ul>
+    </section>
 
-<footer>
-    Contact: finance4teensproject@gmail.com
-</footer>
+    <section class="activities">
+      <h2>Activities & Practice</h2>
+      <p>1. Check your spending habits: If you had a credit card, how would you pay it off each month?</p>
+      <p>2. Scenario: You want to borrow $500. You can pay $50/month. How long will it take if the interest rate is 12%?</p>
+      <p>3. Quiz yourself on what actions help or hurt credit scores.</p>
+    </section>
 
+    <section class="quiz">
+      <h2>Credit Quiz</h2>
+      <div id="quiz-container"></div>
+      <button id="submit-quiz">Submit Quiz</button>
+      <div id="quiz-results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Finance 4 Teens</p>
+    <p>Girl Scout Gold Award Project by Swati</p>
+    <p><a href="mailto:finance4teensproject@gmail.com">finance4teensproject@gmail.com</a></p>
+  </footer>
 </body>
 </html>
