@@ -1,0 +1,91 @@
+:root {
+    --mint: #a7f5d0;
+    --dark-mint: #6fd0a9;
+    --text: #333;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--white);
+    color: var(--text);
+}
+
+header {
+    background: var(--mint);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--dark-mint);
+}
+
+.hero {
+    background: var(--mint);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    border: 2px solid var(--mint);
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--white);
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-color: var(--dark-mint);
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    background: var(--mint);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: var(--text);
+}
+
+.btn:hover {
+    background: var(--dark-mint);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    background: #f5f5f5;
+    font-size: 0.9rem;
+}

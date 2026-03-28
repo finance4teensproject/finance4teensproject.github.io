@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Costs & Loans</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h2>Finance4Teens</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="the-issue.html">The Issue</a>
+        <a href="budgeting.html">Budgeting & Saving</a>
+        <a href="credit.html">Credit</a>
+        <a href="interest-debt.html">Interest & Debt</a>
+        <a href="college-costs.html">College Costs</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>College Costs & Loans</h1>
+    <p>Plan ahead for tuition, financial aid, and smart borrowing.</p>
+</section>
+
+<div class="container">
+    <h2>Quick Guide</h2>
+    <p>College is expensive. Understanding costs, scholarships, and loans can save thousands.</p>
+
+    <h2>Resources</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h3>Scholarships & Grants</h3>
+            <p>Find free money before borrowing.</p>
+        </div>
+        <div class="card">
+            <h3>Student Loans</h3>
+            <p>How to borrow responsibly and avoid high interest.</p>
+        </div>
+        <div class="card">
+            <h3>Budgeting for College</h3>
+            <p>Track expenses, rent, books, and daily costs.</p>
+        </div>
+    </div>
+
+    <h2>Quiz</h2>
+    <div id="college-quiz">
+        <div class="question">
+            <p>1. True or False: Scholarships reduce the need for loans.</p>
+            <label><input type="radio" name="q1" value="correct"> True</label><br>
+            <label><input type="radio" name="q1" value="wrong"> False</label>
+        </div>
+        <div class="question">
+            <p>2. Scenario: You have $5,000 in grants and $10,000 in tuition. How much loan do you need?</p>
+            <label><input type="radio" name="q2" value="correct"> $5,000</label><br>
+            <label><input type="radio" name="q2" value="wrong"> $10,000</label>
+        </div>
+        <div class="question">
+            <p>3. Smart tip for college budgeting?</p>
+            <label><input type="radio" name="q3" value="correct"> Track spending and minimize unnecessary costs</label><br>
+            <label><input type="radio" name="q3" value="wrong"> Ignore small expenses</label>
+        </div>
+        <button class="btn" onclick="checkQuiz('college-quiz')">Check Answers</button>
+        <p id="college-quiz-result"></p>
+    </div>
+
+</div>
+
+<footer>
+    Contact: finance4teensproject@gmail.com
+</footer>
+
+</body>
+</html>

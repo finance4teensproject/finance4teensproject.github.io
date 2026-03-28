@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budgeting & Saving</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h2>Finance4Teens</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="the-issue.html">The Issue</a>
+        <a href="budgeting.html">Budgeting & Saving</a>
+        <a href="credit.html">Credit</a>
+        <a href="interest-debt.html">Interest & Debt</a>
+        <a href="college-costs.html">College Costs</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Budgeting & Saving</h1>
+    <p>Learn how to control your money instead of letting it control you.</p>
+</section>
+
+<div class="container">
+    <h2>Quick Guide</h2>
+    <p>Budgeting is just a plan for how you spend and save money. Saving builds security and helps you reach big goals.</p>
+
+    <h2>Resources</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h3>50/30/20 Rule</h3>
+            <p>A simple budgeting method for beginners.</p>
+        </div>
+
+        <div class="card">
+            <h3>Emergency Fund Tips</h3>
+            <p>Why it matters and how to start one with small amounts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Habit-Based Saving</h3>
+            <p>Easy saving strategies that actually work for teens.</p>
+        </div>
+    </div>
+
+    <h2>Quiz</h2>
+    <div id="budget-quiz">
+
+        <div class="question">
+            <p>1. What is the purpose of a budget?</p>
+            <label><input type="radio" name="q1" value="correct"> To plan spending and saving</label><br>
+            <label><input type="radio" name="q1" value="wrong"> To track grades</label>
+        </div>
+
+        <div class="question">
+            <p>2. True or False: Saving small amounts consistently is better than saving big amounts randomly.</p>
+            <label><input type="radio" name="q2" value="correct"> True</label><br>
+            <label><input type="radio" name="q2" value="wrong"> False</label>
+        </div>
+
+        <div class="question">
+            <p>3. Scenario: You get $30 a week. What’s a smart first step?</p>
+            <label><input type="radio" name="q3" value="correct"> Set aside $5–$10 each week automatically</label><br>
+            <label><input type="radio" name="q3" value="wrong"> Spend it all and see what happens</label>
+        </div>
+
+        <button class="btn" onclick="checkQuiz('budget-quiz')">Check Answers</button>
+        <p id="budget-quiz-result"></p>
+    </div>
+
+</div>
+
+<footer>
+    Contact: finance4teensproject@gmail.com
+</footer>
+
+</body>
+</html>
