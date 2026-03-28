@@ -1,84 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Budgeting & Saving</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="quiz.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budgeting & Saving | Finance 4 Teens</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
 </head>
-
 <body>
-
-<header>
-    <h2>Finance4Teens</h2>
+  <!-- Header / Navigation -->
+  <header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="the-issue.html">The Issue</a>
-        <a href="budgeting.html">Budgeting & Saving</a>
-        <a href="credit.html">Credit</a>
-        <a href="interest-debt.html">Interest & Debt</a>
-        <a href="college-costs.html">College Costs</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="about.html">About</a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="the-issue.html">The Issue</a></li>
+        <li><a href="budgeting.html">Budgeting & Saving</a></li>
+        <li><a href="credit.html">Credit</a></li>
+        <li><a href="interest-debt.html">Interest & Debt</a></li>
+        <li><a href="college-costs.html">College Costs & Loans</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="about.html">About The Project</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
-    <h1>Budgeting & Saving</h1>
-    <p>Learn how to control your money instead of letting it control you.</p>
-</section>
+  <!-- Main Content -->
+  <main class="lesson-page">
+    <section class="intro">
+      <h1>Budgeting & Saving</h1>
+      <p>Learning to manage money is a skill you’ll use for life. Budgeting and saving helps you reach your goals and avoid unnecessary stress.</p>
+    </section>
 
-<div class="container">
-    <h2>Quick Guide</h2>
-    <p>Budgeting is just a plan for how you spend and save money. Saving builds security and helps you reach big goals.</p>
+    <section class="lessons">
+      <h2>Core Lessons</h2>
+      <h3>Saving Basics</h3>
+      <p>Short-term savings are for things you want soon, medium-term savings are for months ahead, and long-term savings are for major goals like college or a car.</p>
 
-    <h2>Resources</h2>
-    <div class="card-grid">
-        <div class="card">
-            <h3>50/30/20 Rule</h3>
-            <p>A simple budgeting method for beginners.</p>
-        </div>
+      <h3>Creating a Budget</h3>
+      <p>Track your income and expenses. Make categories like “Essentials,” “Fun,” and “Savings.” Example: You earn $50/week, spend $20 on snacks, $10 on transport, $10 saved, $10 fun money.</p>
 
-        <div class="card">
-            <h3>Emergency Fund Tips</h3>
-            <p>Why it matters and how to start one with small amounts.</p>
-        </div>
+      <h3>Tracking Spending</h3>
+      <p>Use a spending journal, apps, or envelopes to stay on top of where your money goes. Review weekly and adjust your plan if needed.</p>
+    </section>
 
-        <div class="card">
-            <h3>Habit-Based Saving</h3>
-            <p>Easy saving strategies that actually work for teens.</p>
-        </div>
-    </div>
+    <section class="examples">
+      <h2>Examples & Scenarios</h2>
+      <ul>
+        <li>Emma gets $40/week allowance. She saves $15/week for a new bike.</li>
+        <li>Jamal works part-time and tracks expenses using a spreadsheet to save for college books.</li>
+        <li>Li spends $5/day on coffee but decides to cut back to save $20/month for a concert.</li>
+      </ul>
+    </section>
 
-    <h2>Quiz</h2>
-    <div id="budget-quiz">
+    <section class="activities">
+      <h2>Activities & Practice</h2>
+      <p>1. Create your weekly budget table:</p>
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Budgeted Amount</th>
+          <th>Actual Amount</th>
+        </tr>
+        <tr>
+          <td>Essentials</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fun</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Savings</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
 
-        <div class="question">
-            <p>1. What is the purpose of a budget?</p>
-            <label><input type="radio" name="q1" value="correct"> To plan spending and saving</label><br>
-            <label><input type="radio" name="q1" value="wrong"> To track grades</label>
-        </div>
+      <p>2. Needs vs Wants: Label these items:</p>
+      <ul>
+        <li>New phone case</li>
+        <li>Groceries</li>
+        <li>Movie ticket</li>
+        <li>Bus fare</li>
+      </ul>
 
-        <div class="question">
-            <p>2. True or False: Saving small amounts consistently is better than saving big amounts randomly.</p>
-            <label><input type="radio" name="q2" value="correct"> True</label><br>
-            <label><input type="radio" name="q2" value="wrong"> False</label>
-        </div>
+      <p>3. Scenario Question: You earn $50/week. Rent $20, food $10, saving $10. How much fun money do you have left?</p>
+    </section>
 
-        <div class="question">
-            <p>3. Scenario: You get $30 a week. What’s a smart first step?</p>
-            <label><input type="radio" name="q3" value="correct"> Set aside $5–$10 each week automatically</label><br>
-            <label><input type="radio" name="q3" value="wrong"> Spend it all and see what happens</label>
-        </div>
+    <section class="quiz">
+      <h2>Budgeting Quiz</h2>
+      <div id="quiz-container">
+        <!-- Quiz questions populated by quiz.js -->
+      </div>
+      <button id="submit-quiz">Submit Quiz</button>
+      <div id="quiz-results"></div>
+    </section>
+  </main>
 
-        <button class="btn" onclick="checkQuiz('budget-quiz')">Check Answers</button>
-        <p id="budget-quiz-result"></p>
-    </div>
-
-</div>
-
-<footer>
-    Contact: finance4teensproject@gmail.com
-</footer>
-
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Finance 4 Teens</p>
+    <p>Girl Scout Gold Award Project by Swati</p>
+    <p><a href="mailto:finance4teensproject@gmail.com">finance4teensproject@gmail.com</a></p>
+  </footer>
 </body>
 </html>
