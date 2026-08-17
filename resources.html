@@ -283,38 +283,32 @@ Download the Budget Worksheet
 
 </div>
 
-  <!-- FINANCIAL TOOLS -->
+  <!-- <!-- FINANCIAL TOOLS -->
 
 <div class="container" id="tools">
 
 <h2 class="section-title">Financial Tools</h2>
 
 <p class="section-subtitle">
-
 Practice using financial concepts with these interactive tools. These calculators help you apply what you've learned in real-life situations.
-
 </p>
 
 <div class="card-grid">
+
 
 <div class="card">
 
 <h3>🧮 Budget Calculator</h3>
 
 <p>
-
 Estimate your monthly income, expenses, and savings to see whether your budget is balanced.
-
 </p>
 
-<a href="#" class="btn">
-
+<a href="#budget-calculator" class="btn">
 Open Calculator
-
 </a>
 
 </div>
-
 
 
 <div class="card">
@@ -322,19 +316,14 @@ Open Calculator
 <h3>📈 Compound Interest Calculator</h3>
 
 <p>
-
 See how money can grow over time when interest is earned on both your savings and previously earned interest.
-
 </p>
 
-<a href="#" class="btn">
-
+<a href="#compound-calculator" class="btn">
 Open Calculator
-
 </a>
 
 </div>
-
 
 
 <div class="card">
@@ -342,19 +331,14 @@ Open Calculator
 <h3>💰 Savings Goal Calculator</h3>
 
 <p>
-
 Estimate how long it will take to reach your savings goal based on how much you save each month.
-
 </p>
 
-<a href="#" class="btn">
-
+<a href="#savings-calculator" class="btn">
 Open Calculator
-
 </a>
 
 </div>
-
 
 
 <div class="card">
@@ -362,27 +346,19 @@ Open Calculator
 <h3>💳 Loan Payment Calculator</h3>
 
 <p>
-
 Estimate monthly loan payments and understand how interest affects the total amount you repay.
-
 </p>
 
-<a href="#" class="btn">
-
+<a href="#loan-calculator" class="btn">
 Open Calculator
-
 </a>
 
 </div>
 
-</div>
 
 </div>
 
-
-
-
-
+</div>
 <!-- WHY THESE TOOLS MATTER -->
 
 <div class="container">
@@ -408,7 +384,135 @@ As you continue learning, return to these tools whenever you want to explore dif
 </div>
 
 
+<div class="container" id="budget-calculator">
 
+<h2 class="section-title">🧮 Budget Calculator</h2>
+
+<div class="card">
+
+<label>Monthly Income</label>
+<br>
+<input type="number" id="income" placeholder="Example: 1500">
+
+<br><br>
+
+<label>Monthly Expenses</label>
+<br>
+<input type="number" id="expenses" placeholder="Example: 1000">
+
+<br><br>
+
+<button onclick="calculateBudget()" class="btn">
+Calculate
+</button>
+
+<p id="budget-result"></p>
+
+</div>
+
+</div>
+
+  <div class="container" id="compound-calculator">
+
+<h2 class="section-title">📈 Compound Interest Calculator</h2>
+
+<div class="card">
+
+<label>Starting Amount ($)</label>
+<br>
+<input type="number" id="principal" placeholder="Example: 500">
+
+<br><br>
+
+<label>Annual Interest Rate (%)</label>
+<br>
+<input type="number" id="rate" placeholder="Example: 5">
+
+<br><br>
+
+<label>Years</label>
+<br>
+<input type="number" id="years" placeholder="Example: 10">
+
+<br><br>
+
+<button onclick="calculateCompound()" class="btn">
+Calculate
+</button>
+
+<p id="compound-result"></p>
+
+</div>
+
+</div>
+
+  <div class="container" id="savings-calculator">
+
+<h2 class="section-title">💰 Savings Goal Calculator</h2>
+
+<div class="card">
+
+<label>Savings Goal ($)</label>
+<br>
+<input type="number" id="goal" placeholder="Example: 600">
+
+<br><br>
+
+<label>Amount Already Saved ($)</label>
+<br>
+<input type="number" id="saved" placeholder="Example: 100">
+
+<br><br>
+
+<label>Amount Saved Each Month ($)</label>
+<br>
+<input type="number" id="monthly-saving" placeholder="Example: 50">
+
+<br><br>
+
+<button onclick="calculateSavings()" class="btn">
+Calculate
+</button>
+
+<p id="savings-result"></p>
+
+</div>
+
+</div>
+
+  <div class="container" id="loan-calculator">
+
+<h2 class="section-title">💳 Loan Payment Calculator</h2>
+
+<div class="card">
+
+<label>Loan Amount ($)</label>
+<br>
+<input type="number" id="loan-amount" placeholder="Example: 5000">
+
+<br><br>
+
+<label>Annual Interest Rate (%)</label>
+<br>
+<input type="number" id="loan-rate" placeholder="Example: 6">
+
+<br><br>
+
+<label>Loan Term (Years)</label>
+<br>
+<input type="number" id="loan-years" placeholder="Example: 3">
+
+<br><br>
+
+<button onclick="calculateLoan()" class="btn">
+Calculate
+</button>
+
+<p id="loan-result"></p>
+
+</div>
+
+</div>
 
 
 <!-- TRY IT YOURSELF -->
